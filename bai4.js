@@ -10,7 +10,7 @@ function tongday() {
     let a = +document.getElementById('st1').value;
     let b = +document.getElementById('st2').value;
     let s = 0;
-    for (i = 1; a <= b; a++) {
+    for (a; a <= b; a++) {
         s = s + a;
     }
     document.getElementById('rsc').innerHTML = 'c) Tổng là ' + s;
