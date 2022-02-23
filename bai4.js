@@ -38,3 +38,13 @@ function test() {
 
     }
 }
+
+function tongday2() {
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    if ((b-a+1)%2 == 0) {
+        document.getElementById('rsc2').innerHTML = 'c) Tổng là ' + ((b+a)*(b-a+1)/2);
+    } else {
+        document.getElementById('rsc2').innerHTML = 'c) Tổng là ' + ((b-1+a)*(b-a)/2+b);
+    }
+}
